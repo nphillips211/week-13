@@ -35,8 +35,8 @@ listDiv.addEventListener("click", function(e) {
     console.log("selectedList", selectedList);
 
     updateLists();
-    updateItemsForSelectedList(;
-});
+    updateItemsForSelectedList(
+);
 
 // ------------------------------------------------------
 // FUNCTIONS TO UPDATE THE HTML PAGE WITH RESPECT TO DATA
@@ -61,8 +61,8 @@ function updateLists() {
         aElement.appendChild(textNode);
 
         listDiv.appendChild(aElement);
-    );
-}
+    ;
+})
 
 function updateItemsForSelectedList() {
     while (itemDiv.hasChildNodes()) {
@@ -150,5 +150,4 @@ function closePopups() {
     var popupsArray = Array.from(document.querySelectorAll(".popup"));
     popupsArray.forEach(function(popup) {
         popup.style.display = "none";
-    });
-}
+    } });
